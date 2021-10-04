@@ -1,6 +1,6 @@
 console.log("Here are all the available people:", people);
 
-let nameToGuess = nameRandomizer();
+let nameToGuess;
 
 $(readyNow);
 
@@ -17,8 +17,7 @@ function readyNow() {
     face.data(person);
   }
 
-  $("#nameToGuess").text(nameToGuess);
-
+  nameRandomizer();
   // event listener
   $(`.face`).on(`click`, checkIfCorrect);
 }
@@ -28,14 +27,16 @@ function checkIfCorrect() {
   let name = $(this).data().name;
   console.log(name);
   if (name === nameToGuess) {
-    console.log(`you got it`);
+    alert(`you got it`);
+    nameRandomizer();
   } else {
-    console.log(`you were wrong`);
+    alert(`you were wrong`);
   }
 }
 
 function nameRandomizer() {
-  return people[randomNumber(0, people.length - 1)].name;
+  nameToGuess = people[randomNumber(0, people.length - 1)].name;
+  $("#nameToGuess").text(nameToGuess);
 }
 
 function randomNumber(min, max) {
