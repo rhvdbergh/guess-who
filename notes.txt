@@ -1,11 +1,15 @@
-[ ] append divs for each person in the array
-    [ ] img from github profile image
-    [ ] insert username into url template
-    [ ] insert name into alt string
+[x] append divs for each person in the array
+    [x] img from github profile image
+    [x] insert username into url template
+    [x] insert name into alt string
 
-[ ] display name of a random person from the array
+[x] display name of a random person from the array
 
 [ ] listen for clicks on the divs 
     [ ] fail : alert(try again) but continue current round
     [ ] success: alert(success) and pick new name
 
+Stretch Goals
+[ ] use setTimeout for success visual indicator
+[ ] add effects/animations 
+[ ] randomize the divs on the DOM
