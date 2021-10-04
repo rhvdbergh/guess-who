@@ -27,8 +27,13 @@ function checkIfCorrect() {
   let name = $(this).data().name;
   console.log(name);
   if (name === nameToGuess) {
-    alert(`you got it`);
-    nameRandomizer();
+    let self = $(this);
+    $(this).addClass("success");
+
+    setTimeout(function () {
+      self.removeClass("success");
+      nameRandomizer();
+    }, 2000);
   } else {
     alert(`you were wrong`);
   }
