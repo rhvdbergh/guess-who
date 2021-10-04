@@ -12,6 +12,11 @@ function readyNow() {
   </div>
   `);
     $("body").append(face);
-    $("#nameToGuess").text(person.name);
   }
+
+  $("#nameToGuess").text(people[randomNumber(0, people.length - 1)].name);
+}
+
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (1 + max - min) + min);
 }
