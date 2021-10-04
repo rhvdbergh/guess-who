@@ -1,0 +1,11 @@
+[ ] append divs for each person in the array
+    [ ] img from github profile image
+    [ ] insert username into url template
+    [ ] insert name into alt string
+
+[ ] display name of a random person from the array
+
+[ ] listen for clicks on the divs 
+    [ ] fail : alert(try again) but continue current round
+    [ ] success: alert(success) and pick new name
+
