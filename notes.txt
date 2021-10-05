@@ -11,5 +11,5 @@
 
 Stretch Goals
 [x] use setTimeout for success visual indicator
-[ ] add effects/animations 
+[x ] add effects/animations 
 [x] randomize the divs on the DOM
