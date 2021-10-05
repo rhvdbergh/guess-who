@@ -24,7 +24,8 @@ function checkIfCorrect() {
   console.log(name);
   if (name === nameToGuess) {
     let self = $(this);
-    $(this).addClass('success');
+    self.addClass('success');
+    self.fadeOut(1900);
 
     setTimeout(function () {
       self.removeClass('success');
@@ -49,7 +50,9 @@ function renderPeople() {
 
   </div>
   `);
+    face.hide();
     $('body').append(face);
+    face.fadeIn(1000);
     face.data(person);
   }
 }
