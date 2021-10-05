@@ -5,11 +5,11 @@
 
 [x] display name of a random person from the array
 
-[ ] listen for clicks on the divs 
-    [ ] fail : alert(try again) but continue current round
-    [ ] success: alert(success) and pick new name
+[x] listen for clicks on the divs 
+    [x] fail : alert(try again) but continue current round
+    [x] success: alert(success) and pick new name
 
 Stretch Goals
-[ ] use setTimeout for success visual indicator
+[x] use setTimeout for success visual indicator
 [ ] add effects/animations 
 [ ] randomize the divs on the DOM
